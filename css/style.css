@@ -1,0 +1,200 @@
+/* *********************************
+              CSS RESET
+************************************/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+/* *********************************
+                GENERAL
+************************************/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    background-color: #333;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+} */
+
+a {
+    text-decoration: none;
+}
+
+h3, h2{
+    padding-bottom: 2rem;
+}
+
+/* *********************************
+                HEADER
+************************************/
+
+header {
+    background-image: url(../img/header-bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 28.125rem;
+    color: #ccc;
+}
+
+.header-section {
+    padding: 2rem 3rem;
+    background-color: rgba(51,51,51,0.6);
+    height: 28.125rem;
+}
+
+h1 {
+    padding: 3rem 0;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header-text {
+    color: #fff;
+}
+
+.button-container {
+    margin: 3rem 0;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 1em 2em;
+}
+
+.button:hover {
+    background-color: #eaeaea;
+    color:#333;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* *********************************
+            ABOUT ME
+************************************/
+
+.about-me {
+    background-color:#eaeaea;
+    padding: 3rem 15rem;
+}
+
+.about-me p {
+    margin-top: 1rem;
+}
+
+/* *********************************
+               SKILLS
+************************************/
+.skill-box {
+    background-color: #fff;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.3em;
+    max-width: 50em;
+    margin: auto;
+    padding-top: 0.5rem;
+    color: #333;
+}
+
+div img {
+    width: 100%;
+    margin-bottom: 1rem;
+    min-height: 11.974625rem;
+}
+
+.skills-text {
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+/* *********************************
+            CONTACT ME
+************************************/
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.employers {
+    background-color :#2690d4;
+    color: #fff;
+    padding: 2rem;
+}
+
+.contact-me {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+/* *********************************
+            FOOTER
+************************************/
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    color: #fff;
+    background-color: #000;
+    padding: 3rem;
+}
+
+/* *********************************
+            MEDIA QUERIES
+************************************/
+
+@media (max-width:48rem) {
+
+    .header-section, header {
+        height: 100%;
+    }
+    .header-section {
+        padding: 1.5em;
+    }
+
+    .about-me {
+        padding: 2em;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        padding-top:0;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+
+    footer p{
+        grid-column: 1/5;
+        padding-bottom: 2rem;
+    }
+
+    footer div {
+        grid-gap:0;
+    }
+
+}
